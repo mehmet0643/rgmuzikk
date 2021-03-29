@@ -1,4 +1,4 @@
-<h1 align="centre">🎶 Music Bot 🎶</h1>
+<h1 align="centre">🎶 Müzik Bot 🎶</h1>
 
 <h3 align="centre"> Heroku </h4>
 
