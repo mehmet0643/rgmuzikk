@@ -1,37 +1,37 @@
 {
   "name": "MusicBot",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "description": "Telegram'ınızın Grup Sesli Sohbeti'nde şarkı çalmak için Açık Kaynaklı bot. PyTgCalls tarafından desteklenmektedir.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/TheVaders/MusicBot",
+  "repository": "https://github.com/cancinconntg/vc_bot",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
-      "description": "Pyrogram session string",
+      "description": "Pyrogram oturum dizesi",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "A bot token from @BotFather",
+      "description": "Bot Token @BotFather",
       "required": true
     },
     "BOT_NAME": {
-      "description": "Your MusicPlayer Bot Name.",
+      "description": "MusicPlayer Bot Adınız.",
       "required": false,
-      "value": "Hêllẞø†"
+      "value": "Saygısızlar Müzik Bot"
     },
     "API_ID": {
-      "description": "App ID from my.telegram.org/apps",
+      "description": "App ID my.telegram.org/apps",
       "required": true
     },
     "API_HASH": {
-      "description": "App hash from my.telegram.org/apps",
+      "description": "App hash my.telegram.org/apps",
       "required": true
     },
     "SUDO_USERS": {
-      "description": "List of user IDs counted as admin everywhere (separated by space).",
+      "description": "Yönetici ID listesi.",
       "required": true
     },
     "DURATION_LIMIT": {
-      "description": "Max audio duration limit for downloads (minutes).",
+      "description": "İndirmeler için maksimum ses süresi sınırı (dakika).",
       "required": true,
       "value": "10"
     }
