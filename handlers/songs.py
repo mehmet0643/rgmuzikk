@@ -11,14 +11,14 @@ from config import BOT_NAME as Bn
 from helpers.filters import command, other_filters
 from helpers.decorators import errors
 
-@Client.on_message(command("song") & other_filters)
+@Client.on_message(command("bul") & other_filters)
 @errors
 async def a(client, message: Message):
     query = ''
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = await message.reply(f"**{Bn} :-** 🔍 Searching for {query}")
+    m = await message.reply(f"**{Bn} :-** 🔍 Aranıyor {query}")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -36,8 +36,8 @@ async def a(client, message: Message):
             thumbnail = results[0]["thumbnails"][0]
             duration = results[0]["duration"]
 
-            ## UNCOMMENT THIS IF YOU WANT A LIMIT ON DURATION. CHANGE 1800 TO YOUR OWN PREFFERED DURATION AND EDIT THE MESSAGE (30 minutes cap) LIMIT IN SECONDS
-            # if time_to_seconds(duration) >= 1800:  # duration limit
+            ## SÜRE SıNıRı ISTIYORSANıZ BUNU KULLANıMDAN KALDıRıLSıN. 1800'LERI KENDI ÖNCEDEN BELIRLENMIŞ SÜRENIZE DEĞIŞTIRIN VE MESAJ (30 dakika üst SıNıRı) SıNıRıNı SANIYELER IÇINDE DÜZENLEYIN
+            # if time_to_seconds(duration) >= 1800:  # süre sınırı
             #     m.edit("Exceeded 30mins cap")
             #     return
 
@@ -47,21 +47,21 @@ async def a(client, message: Message):
             open(thumb_name, 'wb').write(thumb.content)
 
         except Exception as e:
-            m.edit(f"**{Bn} :-** 😕 Found nothing. Try changing the spelling a little.\n\n{e}")
+            m.edit(f"**{Bn} :-** 😕 Hiçbir şey bulamadım. Yazımı biraz değiştirmeyi dene..\n\n{e}")
             return
     except Exception as e:
         m.edit(
-           f"**{Bn} :-** 😕 Found Nothing. Sorry.\n\nTry another keywork or maybe spell it properly."
+           f"**{Bn} :-** 😕 Hiçbir şey bulamadım. Üzgünüm.\n\nBaşka bir kelime deneyin veya düzgün düzenleyin."
         )
         print(str(e))
         return
-    await m.edit(f"**{Bn} :-** 📥 Downloading...\n**Query :-** {query}")
+    await m.edit(f"**{Bn} :-** 📥 Indiriyor...\n**Query :-** {query}")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🎶 **Title:** [{title[:35]}]({link})\n⏳ **Duration:** {duration}\n👀 **Views:** {views}'
+        rep = f'🎶 **Başlık:** [{title[:35]}]({link})\n⏳ **Süre:** {duration}\n👀 **Görünümler:** {views}'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -69,7 +69,7 @@ async def a(client, message: Message):
         await  message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name)
         await m.delete()
     except Exception as e:
-        m.edit(f"❌ Error!! \n\n{e}")
+        m.edit(f"❌ Hata!! \n\n{e}")
     try:
         os.remove(audio_file)
         os.remove(thumb_name)
