@@ -8,23 +8,23 @@ from helpers.filters import other_filters2
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""I am **{bn}** !!
-I let you play music in your group's voice chat 😉
-The commands I currently support are:
-⚜️ /play - __Plays the replied audio file or YouTube video through link.__
-⚜️ /pause - __Pause Voice Chat Music.__
-⚜️ /resume - __Resume Voice Chat Music.__
-⚜️ /skip - __Skips the current Music Playing In Voice Chat.__
-⚜️ /stop - __Clears The Queue as well as ends Voice Chat Music.__
+        f"""Ben **{bn}** !!
+Grubunuzun sesli sohbetinde müzik çalmanıza izin 😉
+Şu anda desteklediğim komutlar şunlardır:
+⚜️ /oynat - __Yanıtlanan ses dosyasını veya YouTube videosunu bağlantı üzerinden çalar.__
+⚜️ /durdur - __Sesli Sohbet Müziğini Duraklat.__
+⚜️ /devam - __Sesli Sohbet Müziğine Devam Et.__
+⚜️ /atla - __Sesli Sohbette Çalan Geçerli Müziği Atlar.__
+⚜️ /bitir - __Sırayı temizler ve Sesli Sohbet Müziği'ni sona erdirir.__
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Group 💬", url="https://t.me/hellbot_official_chat"
+                        "Grup 💬", url="https://t.me/Saygisizlar"
                     ),
                     InlineKeyboardButton(
-                        "Channel 📣", url="https://t.me/hellbot_official"
+                        "Kanal 📣", url="https://t.me/SaygisizlarMusic"
                     )
                 ]
             ]
