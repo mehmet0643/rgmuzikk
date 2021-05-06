@@ -16,16 +16,18 @@ Grubunuzun sesli sohbetinde müzik çalmanıza izin 😉
 ⚜️ /devam - __Sesli Sohbet Müziğine Devam Et.__
 ⚜️ /atla - __Sesli Sohbette Çalan Geçerli Müziği Atlar.__
 ⚜️ /bitir - __Sırayı temizler ve Sesli Sohbet Müziği'ni sona erdirir.__
+⚜️ /katil - __Müzik Botunun Asistanını Gruba Çağırır.__
+⚜️ /ayril - __Müzik Botunun Asistanını Gruptan Çıkartır.__
 ⚜️ /bul - __Müziği bulup gruba gönderir. Örnek /bul tuğkan kusura bakma.__
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Grup 💬", url="https://t.me/Saygisizlar"
+                        "Grup 💬", url="https://t.me/cinnetchat"
                     ),
                     InlineKeyboardButton(
-                        "Kanal 📣", url="https://t.me/SaygisizlarMusic"
+                        "Kanal 📣", url="https://t.me/cinnetkanal"
                     )
                 ]
             ]
