@@ -24,10 +24,10 @@ Grubunuzun sesli sohbetinde müzik çalmanıza izin 😉
             [
                 [
                     InlineKeyboardButton(
-                        "Grup 💬", url="https://t.me/MarvellousChat"
+                        "Grup 💬", url="https://t.me/Ghosts_Chat"
                     ),
                     InlineKeyboardButton(
-                        "Kanal 📣", url="https://t.me/ZeyTumblr"
+                        "Kanal 📣", url="https://t.me/GhostsKanal"
                     )
                 ]
             ]
