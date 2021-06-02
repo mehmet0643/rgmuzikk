@@ -1,3 +1,4 @@
+# Yayında ve yapımda emeği geçen herkese teşekkürler. 
 from pyrogram import Client
 from pyrogram.types import ChatMemberUpdated
 
