@@ -57,16 +57,15 @@ async def gstart(_, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_text(
         f"""<b>Merhabalar {message.from_user.first_name}!
-\n/play <song name> - istediğiniz şarkıyı çal
-/song <song name> - istediğiniz şarkıları hızlı bir şekilde indirin
-/search <query> - youtube'da ayrıntıları içeren videoları arama
+\n/oynat <song name> - istediğiniz şarkıyı çal
+/bul <song name> - istediğiniz şarkıları hızlı bir şekilde indirin
+/arama <query> - youtube'da ayrıntıları içeren videoları arama
 
 \n*Yalnızca yöneticiler*
-/player - müzik çalar ayarları panelini açma
-/pause - şarkı çalmayı duraklatma
-/resume - şarkı çalmaya devam et
-/skip - sonraki şarkıyı çal
-/end - müzik çalmayı durdurma
+/durdur - şarkı çalmayı duraklatma
+/devamet - şarkı çalmaya devam et
+/atla - sonraki şarkıyı çal
+/bitir - müzik çalmayı durdurma
  </b>""",
         reply_markup=InlineKeyboardMarkup(
             [
