@@ -1,8 +1,8 @@
 <h1 align="centre">🎶 Müzik Bot 🎶</h1>
 
-Ana Grup = [@Exercitus](https://t.me/ExercitusChat)
+Sahip = [Mehmet Bey](https://t.me/EfsaneStar)
 
-Hazırlayan = [@ExercitusSahip](https://t.me/ExercitusSahip)
+Hazırlayanın ANA grubu = [Sohbet Skyfall](https://t.me/sohbetskyfall)
 
 <h3 align="centre"> Heroku </h4>
 
