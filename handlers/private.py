@@ -49,3 +49,35 @@ async def gstart(_, message: Message):
         )
    )
 
+@Client.on_message(
+    filters.command("help")
+    & filters.private
+    & ~ filters.edited
+)
+async def help(client: Client, message: Message):
+    await message.reply_text(
+        f"""<b>Merhabalar {message.from_user.first_name}!
+\n/play <song name> - istediğiniz şarkıyı çal
+/song <song name> - istediğiniz şarkıları hızlı bir şekilde indirin
+/search <query> - youtube'da ayrıntıları içeren videoları arama
+
+\n*Yalnızca yöneticiler*
+/player - müzik çalar ayarları panelini açma
+/pause - şarkı çalmayı duraklatma
+/resume - şarkı çalmaya devam et
+/skip - sonraki şarkıyı çal
+/end - müzik çalmayı durdurma
+ </b>""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "📣 Kanal", url="https://t.me/sohbetlobisi"
+                    ),
+                    InlineKeyboardButton(
+                        "💬 Group", url="https://t.me/skyfallsohbet"
+                    )
+                ]
+            ]
+        )
+    )    
