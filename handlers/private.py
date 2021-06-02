@@ -29,7 +29,7 @@ async def start(_, message: Message):
                     )
               ],[ 
                     InlineKeyboardButton(
-                        "Sohbet Grup 🇹🇷", url="https://t.me/sohbetskyfall"
+                        "Sohbet Grup 💬", url="https://t.me/sohbetskyfall"
                     )]
             ]
         ),
@@ -43,7 +43,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🚨 Support Kanal 🚨", url="https://t.me/sohbetlobisi")
+                        "🎛️ Support Kanal 🎛️", url="https://t.me/sohbetlobisi")
                 ]
             ]
         )
@@ -57,15 +57,15 @@ async def gstart(_, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_text(
         f"""<b>Merhabalar {message.from_user.first_name}!
-\n/oynat <song name> - istediğiniz şarkıyı çal
-/bul <song name> - istediğiniz şarkıları hızlı bir şekilde indirin
-/arama <query> - youtube'da ayrıntıları içeren videoları arama
+💠 /oynat <song name> - istediğiniz şarkıyı çal
+💠 /bul <song name> - istediğiniz şarkıları hızlı bir şekilde indirin
+💠 /arama <query> - youtube'da ayrıntıları içeren videoları arama
 
 \n*Yalnızca yöneticiler*
-/durdur - şarkı çalmayı duraklatma
-/devamet - şarkı çalmaya devam et
-/atla - sonraki şarkıyı çal
-/bitir - müzik çalmayı durdurma
+💠 /durdur - şarkı çalmayı duraklatma
+💠 /devam - şarkı çalmaya devam et
+💠 /atla - sonraki şarkıyı çal
+💠 /bitir - müzik çalmayı durdurma
  </b>""",
         reply_markup=InlineKeyboardMarkup(
             [
