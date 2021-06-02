@@ -1,3 +1,4 @@
+# Yayında ve yapımda emeği geçen herkese teşekkürler. 
 from asyncio.queues import QueueEmpty
 
 from pyrogram import Client
