@@ -54,7 +54,7 @@ async def bitir(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text(f"**{BN} :-** ❌ Bitirildi!")
+        await message.reply_text(f"**{BN} :-** ❌ Müzik botu kapandı. Efendim!")
 
 
 @Client.on_message(command("atla") & other_filters)
@@ -74,4 +74,4 @@ async def atla(_, message: Message):
                 callsmusic.queues.get(message.chat.id)["file_path"]
             )
 
-        await message.reply_text(f"**{BN} :-** 😬 Bir Sonraki Müziğe Atlandı!")
+        await message.reply_text(f"**{BN} :-**➡️ 😬 Bir Sonraki Müziğe Atlandı!")
