@@ -1,3 +1,4 @@
+# Yayında ve yapımda emeği geçen herkese teşekkürler. 
 from typing import Callable
 
 from pyrogram import Client
