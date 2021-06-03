@@ -21,7 +21,7 @@ async def start(_, message: Message):
                         "Kurucu Sahip 👨‍💻", url="https://t.me/EfsaneStar"
                   ],[
                     InlineKeyboardButton(
-                        "Yardımcı Sahip 👨‍💻", url="https://t.me/EfsaneStar"
+                        "Yardımcı Sahip 👨‍💻", url="https://t.me/Mehmentt_12"
                     )
                 ],[ 
                     InlineKeyboardButton(
@@ -58,7 +58,7 @@ async def help(client: Client, message: Message):
     await message.reply_text(
         f"""<b>Merhabalar {message.from_user.first_name}!
 💠 /oynat <song name> - istediğiniz şarkıyı çal
-💠 /ytpçal <youtuden direk müzik bulur ve oynatır. 
+💠 /ytp <youtuden direk müzik bulur ve oynatır. 
 💠 /bul <song name> - istediğiniz şarkıları hızlı bir şekilde indirin
 💠 /arama <query> - youtube'da ayrıntıları içeren videoları arama
 💠 /jsbul <saavn> - üzenden parçayı bulur. 
