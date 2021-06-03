@@ -1,21 +1,14 @@
-import os
-
-import youtube_dl
-from youtube_search import YoutubeSearch
-import requests
-
-from helpers.filters import command, other_filters2, other_filters
-from helpers.decorators import errors
-
-from pyrogram import Client
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, Voice
-
-from config import BOT_NAME as bn, PLAY_PIC
- 
+from pyrogram import Client, filters
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
-@Client.on_message(filters.command("start") & filters.private & ~filters.channel)
-async def start(_, message: Message):
+
+@Client.on_message(
+    filters.command("start")
+    & filters.private
+    & ~ filters.edited
+)
+async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""Merhaba 👋! Telegram Gruplarının sesli sohbetlerinde müzik çalabiliyorum. Sizi şaşırtacak pek çok harika özelliğim var!\n\n🔴 Telegram gruplarınızın sesli sohbetlerinizde müzik çalmamı ister misiniz? ? Beni nasıl kullanabileceğinizi öğrenmek için lütfen aşağıdaki /help \' düğmesini tıklayın.\n\n🔴 Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir.\n\n🔴 bahsedilen daha fazla bilgi ve komutlar versiyon 3.2.8\n\n@EfsaneStar Tarafından hazırlanan ve tasarlanan bir projeyim "" " ,
       """B
