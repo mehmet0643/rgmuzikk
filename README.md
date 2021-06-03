@@ -2,8 +2,6 @@
 
 [![W2HMusic logo](https://i.ibb.co/549yrxQ/IMG-20210603-133248-749.jpg)](https://t.me/EfsaneStar)
 
-- Sahip 👨‍💻= [Mehmet Bey](https://t.me/EfsaneStar)
-- Yardımcı Kurucu 👨‍💻= [Rg Mehmet](https://t.me/mehmett_12)
 
 <h3 align="centre"> Heroku </h4>
 
@@ -43,3 +41,7 @@ STRING_NAME i buradan alın ;
 - Eski Vc müzik botunu diger Müzik botlarına bakarak düzenledim.
 - Daha iyisi için uğraşıyoruz.
 - Rg Mehmet Ve Ben EfsaneStar Adı ile Telegramda Rg sohbet için En iyisi için mücadele vereceğiz. 
+
+### Telegramda Böyle
+- Sahip 👨‍💻= [Mehmet Bey](https://t.me/EfsaneStar)
+- Yardımcı Kurucu 👨‍💻= [Rg Mehmet](https://t.me/mehmett_12)
