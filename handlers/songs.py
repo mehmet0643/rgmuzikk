@@ -19,7 +19,7 @@ async def a(client, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = await message.reply(f"**{Bn} :-** 🔍 Aranıyor {query}")
+    m = await message.reply(f"**{Bn} :-** 🌍 Aranıyor {query}")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -78,7 +78,7 @@ async def a(client, message: Message):
         print(e)
 
 
-# YouTube çalan müzik i vdeo olarak indirmek için.
+# YouTube çalan müziği vdeo olarak indirmek için.
  
 @Client.on_message(filters.command(["vindir", "video"]))
 async def ytmusic(client,message: Message):
