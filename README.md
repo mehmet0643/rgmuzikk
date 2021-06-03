@@ -1,6 +1,6 @@
 <h1 align="centre">🎶 Müzik Bot 🎶</h1>
 
-https://i.ibb.co/549yrxQ/IMG-20210603-133248-749.jpg
+[![W2HMusic logo](https://i.ibb.co/549yrxQ/IMG-20210603-133248-749.jpg)](https://t.me/EfsaneStar)
 
 Sahip = [Mehmet Bey](https://t.me/EfsaneStar)
 
