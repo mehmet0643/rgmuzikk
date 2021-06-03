@@ -23,7 +23,7 @@ async def durdur(_, message: Message):
         await message.reply_text(f"**{BN} :-** 🙄 Müzik açık değil!")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
-        await message.reply_text(f"**{BN} :-** 🤐 Durduruldu!")
+        await message.reply_text(f"**{BN} :-** ⏸️ Durduruldu!")
 
 
 @Client.on_message(command("devam") & other_filters)
@@ -38,7 +38,7 @@ async def devam(_, message: Message):
         await message.reply_text(f"**{BN} :-** 🙄 Hiçbirşey Durdurulmadı!")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
-        await message.reply_text(f"**{BN} :-** 🥳 Devam Ediyor!")
+        await message.reply_text(f"**{BN} :-** ⏩ Devam Ediyor!")
 
 
 @Client.on_message(command("bitir") & other_filters)
@@ -46,7 +46,7 @@ async def devam(_, message: Message):
 @authorized_users_only
 async def bitir(_, message: Message):
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text(f"**{BN} :-** 🙄 Hiçbirşey Oynatılmıyor!")
+        await message.reply_text(f"**{BN} :-** ❇️ Hiçbirşey Oynatılmıyor!")
     else:
         try:
             callsmusic.queues.clear(message.chat.id)
