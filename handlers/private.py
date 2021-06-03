@@ -62,6 +62,7 @@ async def help(client: Client, message: Message):
 💠 /bul <song name> - istediğiniz şarkıları hızlı bir şekilde indirin
 💠 /arama <query> - youtube'da ayrıntıları içeren videoları arama
 💠 /jsbul <saavn> - üzenden parçayı bulur. 
+💠 /vindir 📩 Çalan parçayı youtube üzerinden vdeo olarak indirir. 
 
 \n*Yalnızca yöneticiler*
 💠 /durdur - şarkı çalmayı duraklatma
