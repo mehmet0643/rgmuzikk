@@ -60,6 +60,7 @@ async def help(client: Client, message: Message):
 💠 /oynat <song name> - istediğiniz şarkıyı çal
 💠 /bul <song name> - istediğiniz şarkıları hızlı bir şekilde indirin
 💠 /arama <query> - youtube'da ayrıntıları içeren videoları arama
+💠 /jsbul <saavn> - üzenden parçayı bulur. 
 
 \n*Yalnızca yöneticiler*
 💠 /durdur - şarkı çalmayı duraklatma
