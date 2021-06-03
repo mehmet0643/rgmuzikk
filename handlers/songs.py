@@ -76,3 +76,36 @@ async def a(client, message: Message):
         os.remove(thumb_name)
     except Exception as e:
         print(e)
+
+
+# saavn dan indirmek için. 
+@Client.on_message(filters.command("saavn") & ~filters.edited)
+async def jsbul(_, message):
+    global is_downloading
+    if len(message.command) < 2:
+        await message.reply_text("/saavn requires an argument.")
+        return
+    if is_downloading:
+        await message.reply_text("Başka bir indirme devam ediyor, bir süre sonra yeniden deneyin.")
+        return
+    is_downloading = True
+    text = message.text.split(None, 1)[1]
+    query = text.replace(" ", "%20")
+    m = await message.reply_text("🌍 Aranıyor... Efendim!")
+    try:
+        songs = await arq.saavn(query)
+        sname = songs[0].song
+        slink = songs[0].media_url
+        ssingers = songs[0].singers
+        await m.edit("Downloading")
+        song = await download_song(slink)
+        await m.edit("Uploading")
+        await message.reply_audio(audio=song, title=sname,
+                                  performer=ssingers)
+        os.remove(song)
+        await m.delete()
+    except Exception as e:
+        is_downloading = False
+        await m.edit(str(e))
+        return
+    is_downloading = False
