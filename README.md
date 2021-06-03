@@ -8,7 +8,7 @@ Hazırlayanın ANA grubu = [Sohbet Skyfall](https://t.me/sohbetskyfall)
 
 <h3 align="centre"> Heroku </h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cancinconntg/vc_bot.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmetbaba06/Voice_Music2021)
 
 STRING_NAME i buradan alın ;
 
