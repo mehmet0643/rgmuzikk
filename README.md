@@ -2,9 +2,8 @@
 
 [![W2HMusic logo](https://i.ibb.co/549yrxQ/IMG-20210603-133248-749.jpg)](https://t.me/EfsaneStar)
 
-Sahip = [Mehmet Bey](https://t.me/EfsaneStar)
-
-Hazırlayanın ANA grubu = [Sohbet Skyfall](https://t.me/sohbetskyfall)
+- Sahip 👨‍💻= [Mehmet Bey](https://t.me/EfsaneStar)
+- Yardımcı Kurucu 👨‍💻= [Rg Mehmet](https://t.me/mehmett_12)
 
 <h3 align="centre"> Heroku </h4>
 
