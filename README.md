@@ -21,3 +21,8 @@ STRING_NAME i buradan alın ;
    - `STRING_NAME` :  Buradan session oluşturun. [here](https://repl.it/@subinps/getStringName)
    - `BOT_TOKEN` :  Buradan bot oluşturun [@Botfather](https://t.me/botfather) ve tokeni girin. 
    - `SUDO_USERS` :  Buraya grupta yönetici olmasa bile botu yönetmesini istediğiniz kişinin id sini girin. Birden fazla yazacaksanız arasına boşluk koyun. 
+## pmpermit
+**Pmlere izin vermek için kullanılabilir komutlar.**
+
+- `.izin`: kullanıcıya özel msjda konuşma hakkı verir.
+- `.sus`: kullanıcıya özel msjda konuşma hakkı vermez.
