@@ -33,7 +33,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎵 **Processing** ...")
+    await lel.edit("🎵 **İşleme Aldım** ...")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -52,8 +52,8 @@ async def play(_, message: Message):
 
     except Exception as e:
         lel.edit(
-            "❌ Didn't found anything.\n\nRetry."
-        )
+            "❌ Hiçbir şey bulamadım ki.\n\nRetry"
+        ) 
         print(str(e))
         return
 
@@ -87,7 +87,7 @@ async def play(_, message: Message):
     elif url:
         file_path = await converter.convert(youtube.download(url))
     else:
-        return await lel.edit_text("❗ Nothing to play lol 😹 ")
+        return await lel.edit_text("❗ Oynatılmak için hiçbir şey yok 🤣 ")
 
     if message.chat.id in callsmusic.pytgcalls.active_calls:
         position = await queues.put(message.chat.id, file=file_path)
@@ -101,7 +101,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=thumb_name,
         reply_markup=keyboard,
-        caption="▶️ **Playing** {} via YouTube Music 😜".format(
+        caption="▶️ **Oynatılıyor** {} Voice_Music2021 tarafından 💽".format(
         message.from_user.mention()
         ),
     )
