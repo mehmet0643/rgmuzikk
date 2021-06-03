@@ -38,7 +38,7 @@ STRING_NAME i buradan alın ;
 - ⏯️ /atla - sonraki şarkıyı çal
 - ❌ /bitir - müzik çalmayı durdurma
 
-# Genel Yorum 👨‍💻
+## Genel Yorum 👨‍💻
 
 - Eski Vc müzik botunu diger Müzik botlarına bakarak düzenledim.
 - Daha iyisi için uğraşıyoruz.
