@@ -1,12 +1,17 @@
-# Mehmet babanin müzik botları prjosi
-# EfsaneStar - MehmetBaba06 - SohbetSkyfall 
+import os
 
-from pyrogram import Client, filters
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+import youtube_dl
+from youtube_search import YoutubeSearch
+import requests
 
-from config import BOT_NAME as bn
+from helpers.filters import command, other_filters2, other_filters
+from helpers.decorators import errors
 
+from pyrogram import Client
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, Voice
 
+from config import BOT_NAME as bn, PLAY_PIC
+ 
 
 
 @Client.on_message(filters.command("start") & filters.private & ~filters.channel)
