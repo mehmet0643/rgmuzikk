@@ -25,7 +25,7 @@ STRING_NAME i buradan alın ;
 - `.sus`: kullanıcıya özel msjda konuşma hakkı vermez.
 ## Özel Komutlar
 - ▶️ /oynat <song name> - istediğiniz şarkıyı çal
-- 💽 /ytpçal <youtuden direk müzik bulur ve oynatır. 
+- 💽 /ytp <youtuden direk müzik bulur ve oynatır. 
 - 🌍 /bul <song name> - istediğiniz şarkıları hızlı bir şekilde indirin
 - 📩 /arama <query> - youtube'da ayrıntıları içeren videoları arama
 - 🔂 /jsbul <saavn> - saavn üzenden parçayı bulur. 
