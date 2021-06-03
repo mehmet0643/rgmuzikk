@@ -26,3 +26,15 @@ STRING_NAME i buradan alın ;
 
 - `.izin`: kullanıcıya özel msjda konuşma hakkı verir.
 - `.sus`: kullanıcıya özel msjda konuşma hakkı vermez.
+## Özel Komutlar
+- /oynat <song name> - istediğiniz şarkıyı çal
+- /ytpçal <youtuden direk müzik bulur ve oynatır. 
+- /bul <song name> - istediğiniz şarkıları hızlı bir şekilde indirin
+- /arama <query> - youtube'da ayrıntıları içeren videoları arama
+- /jsbul <saavn> - üzenden parçayı bulur. 
+
+\n*Yalnızca yöneticiler*
+- /durdur - şarkı çalmayı duraklatma
+- /devam - şarkı çalmaya devam et
+- /atla - sonraki şarkıyı çal
+- /bitir - müzik çalmayı durdurma
