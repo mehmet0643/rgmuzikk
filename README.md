@@ -29,6 +29,7 @@ STRING_NAME i buradan alın ;
 - 🌍 /bul <song name> - istediğiniz şarkıları hızlı bir şekilde indirin
 - 📩 /arama <query> - youtube'da ayrıntıları içeren videoları arama
 - 🔂 /jsbul <saavn> - saavn üzenden parçayı bulur. 
+- 📩 /vindir Parçayı youtube üzerinden vdeo olarak indirir. 
 
 **Yalnızca yöneticiler**
 - ⏸️ /durdur - şarkı çalmayı duraklatma
