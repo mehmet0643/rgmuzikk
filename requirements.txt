@@ -1,3 +1,4 @@
+# işleyiciler bölümü akışı buradan salıyor kan yani hımm @EfsaneStar yapıyorsun bu işi. 
 pyrogram
 TgCrypto
 py-tgcalls
