@@ -1,3 +1,3 @@
-# Yayında ve yapımda emeği geçen herkese teşekkürler. 
-from .callsmusic import pytgcalls, run
-from . import queues
+from DaisyXMusic.callsmusic import queues
+from DaisyXMusic.callsmusic.callsmusic import pytgcalls, run
+ 
