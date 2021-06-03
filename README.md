@@ -37,3 +37,9 @@ STRING_NAME i buradan alın ;
 - ⏩ /devam - şarkı çalmaya devam et
 - ⏯️ /atla - sonraki şarkıyı çal
 - ❌ /bitir - müzik çalmayı durdurma
+
+# Genel Yorum 👨‍💻
+
+- Eski Vc müzik botunu diger Müzik botlarına bakarak düzenledim.
+- Daha iyisi için uğraşıyoruz.
+- Rg Mehmet Ve Ben EfsaneStar Adı ile Telegramda Rg sohbet için En iyisi için mücadele vereceğiz. 
