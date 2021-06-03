@@ -1,8 +1,8 @@
 {
-  "name": "MusicBot",
+  "name": "Voice_Music2021",
   "description": "Telegram'ınızın Grup Sesli Sohbeti'nde şarkı çalmak için Açık Kaynaklı bot. PyTgCalls tarafından desteklenmektedir.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/cancinconntg/vc_bot",
+  "repository": "https://github.com/Mehmetbaba06/Voice_Music2021",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
