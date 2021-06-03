@@ -16,7 +16,7 @@
     "BOT_NAME": {
       "description": "MusicPlayer Bot Adınız.",
       "required": false,
-      "value": "Saygısızlar Müzik Bot"
+      "value": "Voice_Music2021 🤖"
     },
     "API_ID": {
       "description": "App ID my.telegram.org/apps",
@@ -33,7 +33,7 @@
     "DURATION_LIMIT": {
       "description": "İndirmeler için maksimum ses süresi sınırı (dakika).",
       "required": true,
-      "value": "10"
+      "value": "45"
     }
   }
 }
