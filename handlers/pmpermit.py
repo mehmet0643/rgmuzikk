@@ -1,26 +1,13 @@
-from pyrogram import Client
-import asyncio
-from config import SUDO_USERS, PMPERMIT
+from callsmusic.callsmusic import client as USER
 from pyrogram import filters
-from pyrogram.types import Message
-from .callsmusic import client as USER
+from pyrogram.types import Chat, Message, User
 
-PMSET =True
-pchats = []
 
 @USER.on_message(filters.text & filters.private & ~filters.me & ~filters.bot)
 async def pmPermit(client: USER, message: Message):
-    if PMPERMIT == "ENABLE":
-        if PMSET:
-            chat_id = message.chat.id
-            if chat_id in pchats:
-                return
-            await USER.send_message(
-                message.chat.id,
-                "**Voice Müzik Asistanına Hoş Geldiniz**\n\n**🛑 Rules:**\n1. Burada spam yapmayın. \n2. Burada Sohbet Etmek Yok.\n\n**⚠️ Disclamer:** Burada bir mesaj gönderiyorsanız, yönetici mesajınızı görecek ve sohbete katılacaktır\n    - Bu kullanıcıyı gizli gruplara ekleme.😉\n   - Özel bilgileri burada paylaşmayın 👨‍💻\n\n",
-            ) 
-            return
-
+  await USER.send_message(message.chat.id,"Merhaba, Bu bir müzik asistanı hizmetidir.\n\n ❗️ kurallar:\n   - Sohbete izin yok\n   - İstenmeyen postaya izin verilmez \n\n 🚨 **USERBOT GRUBUNUZA KATILAMAZSA GRUP DAVETI BAĞLANTISI VEYA KULLANICI ADI GÖNDER.**\n\n ⚠️ DİKKAT: Burada bir mesaj gönderiyorsanız Yöneticinin iletinizi göreceği anlamına gelir ve sohbete katılın\n    - Bu kullanıcıyı gizli gruplara eklemeyin.\n   - Özel bilgileri burada paylaşmayın\n\n")
+  return                        
+           
     
 
 @Client.on_message(filters.command(["/pmpermit"]))
