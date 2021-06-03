@@ -1,2 +1,2 @@
-from DaisyXMusic.callsmusic import queues
-from DaisyXMusic.callsmusic.callsmusic import pytgcalls, run
+from .callsmusic import queues
+from .callsmusic.callsmusic import pytgcalls, run
