@@ -19,10 +19,7 @@ STRING_NAME i buradan alın ;
    - `BOT_TOKEN` :  Buradan bot oluşturun [@Botfather](https://t.me/botfather) ve tokeni girin. 
    - `SUDO_USERS` :  Buraya grupta yönetici olmasa bile botu yönetmesini istediğiniz kişinin id sini girin. Birden fazla yazacaksanız arasına boşluk koyun. 
 ## pmpermit
-**Pmlere izin vermek için kullanılabilir komutlar.**
-
-- `.izin`: kullanıcıya özel msjda konuşma hakkı verir.
-- `.sus`: kullanıcıya özel msjda konuşma hakkı vermez.
+**Pmlere izin yok.. 
 ## Özel Komutlar
 - ▶️ /oynat <song name> - istediğiniz şarkıyı çal
 - 💽 /ytp <youtuden direk müzik bulur ve oynatır. 
