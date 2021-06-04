@@ -17,7 +17,7 @@ async def start(_, message: Message):
             InlineKeyboardButton(" Group 💬", url="https://t.me/sohbetskyfall"),
             InlineKeyboardButton("Channel 📣", url="https://t.me/kanalEfsanestar")
             ],[
-            InlineKeyboardButton("Tasarım 👨‍💻", url="https://t.me/Mehmett_12"),
+            InlineKeyboardButton("Kurucu Sahip 👨‍💻", url="https://t.me/Mehmett_12"),
             InlineKeyboardButton("Kurucu Sahip 👨‍💻", url="https://t.me/EfsaneStar")
             ]]
         ),
@@ -30,7 +30,7 @@ async def gstart(_, message: Message):
           text="**Music Bot Is Online ✅**",
           reply_markup=InlineKeyboardMarkup(
               [[
-              InlineKeyboardButton(text="🎛️ Support Group 🎛️", url="https://t.me/sohbetskyfall")
+              InlineKeyboardButton(text="🗣️ Sohbet Group 👩‍👩‍👧‍👦", url="https://t.me/sohbetskyfall")
               ]]
           )
       )
@@ -46,19 +46,19 @@ __× Önce Beni Grubunuza Ekleyin..
 
 **🏷 Ortak Komutlar.**
 
-💠 `/oynat` - Song Name : __Youtube Üzerinden Oynatır__
-💠 `/bul` - Song Name : __Şarkıyı YouTube'dan alın__
-💠 `/arama` - YouTube Title : __(YouTube Arama Sorgusu'ni alıp Alın)__
-💠 `/ytp` - __Parçayı youtubeden çalar__
+▶️ `/oynat` - Song Name : __Youtube Üzerinden Oynatır__
+🔎 `/bul` - Song Name : __Şarkıyı YouTube'dan alın__
+🌐 `/arama` - YouTube Title : __(YouTube Arama Sorgusu'ni alıp Alın)__
+📡 `/ytp` - __Parçayı youtubeden çalar__
+
 **🏷 Grup Yöneticisi Komutları.**
 
-💠 `/atla` : __Müziği Atlar__
-💠 `/durdur` : __Müzik Çalmayı Duraklat__
-💠 `/devam` : __Müzik çalmayı devam ettir__ 
-💠 `/bitir` : __Müzik çalmayı durdurur__
-💠 `/jsbul` : __saavn üzerinden arama yapar bulur__
-💠 `/katil` : __Asistan Grup a Katılıyor__
-💠 `/ayril` : __Gruptan Asistan Ayrılıyor__
+🔂 `/atla` : __Müziği Atlar__
+⏸️ `/durdur` : __Müzik Çalmayı Duraklat__
+⏩ `/devam` : __Müzik çalmayı devam ettir__ 
+❌ `/bitir` : __Müzik çalmayı durdurur__
+👍 `/katil` : __Asistan Grup a Katılıyor__
+👋 `/ayril` : __Gruptan Asistan Ayrılıyor__
 """,
         reply_markup=InlineKeyboardMarkup(
               [[
