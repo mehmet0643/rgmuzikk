@@ -62,7 +62,7 @@ async def a(client, message: Message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🎶 **Başlık:** [{title[:35]}]({link})\n⏳ **Süre:** {duration}\n👀 **Görünümler:** {views}'
+        rep = f'🎼 **Başlık:** [{title[:35]}]({link})\n⏲️ **Süre:** {duration}\n🌍 **Görünümler:** {views}'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
