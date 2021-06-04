@@ -1,9 +1,9 @@
 {
-  "name": "Voice_Music2021",
+  "name": "RG Music",
   "description": "Telegram'ınızın Grup Sesli Sohbeti'nde şarkı çalmak için Açık Kaynaklı bot. PyTgCalls tarafından desteklenmektedir.",
   "keywords": ["music", "voicechat", "telegram"],
   "logo":"https://i.ibb.co/549yrxQ/IMG-20210603-133248-749.jpg",
-  "repository": "https://github.com/Mehmetbaba06/Voice_Music2021",
+  "repository": "https://github.com/mehmet0643/rgmuzikk",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
@@ -17,7 +17,7 @@
     "BOT_NAME": {
       "description": "MusicPlayer Bot Adınız.",
       "required": false,
-      "value": "Voice_Music2021 🤖"
+      "value": "RG Music 🤖"
     },
     "API_ID": {
       "description": "App ID my.telegram.org/apps",
