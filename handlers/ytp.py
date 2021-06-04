@@ -22,7 +22,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🔎 **Buluyorum ** Hemen Efendim...")
+    lel = await message.reply("🕵️‍♂️ **Buluyorum ** Hemen Efendim...")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -33,7 +33,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎵 **İşleme Aldım** ...")
+    await lel.edit("🎵 ** İşleme alıyorum lütfen beklryiniz. Efendim 🤗** ...")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -93,7 +93,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo=thumb_name, 
-        caption=f"#⃣ Your requested song **queued** {position} ",
+        caption=f"#⃣ İstediğiniz şarkı alındı**sıaraya** {position} ",
         reply_markup=keyboard2)
         return await lel.delete()
     else:
@@ -101,7 +101,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=thumb_name,
         reply_markup=keyboard,
-        caption="▶️ **Oynatılıyor** {} Voice_Music2021 tarafından 💽".format(
+        caption="▶️ **Oynatılıyor** {} Voice_Music2021 tarafından 💽 Başka bir arama yapmak için bul veya ytb yazınız. Efendim 🤗".format(
         message.from_user.mention()
         ),
     )
