@@ -9,7 +9,7 @@ from config import BOT_NAME as bn
 @Client.on_message(filters.command(["start", "start@GroupMusicPlayBot"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        text="**Merhaba 👋🏻 {}!**\n\n**Telegram Gruplarının Sesli Sohbetlerinde Müzik Çalabilirim. Sizi şaşırtacak çok sayıda harika özelliklerim var!\n\n **Tıklayınız /Komutlar Daha Fazlası İçin [Mehmet Bey](https://t.me/EfsaneStar) ❤**".format(message.from_user.mention),
+        text="**Merhaba 👋🏻 {}!**\n\n**Telegram Gruplarının Sesli Sohbetlerinde Müzik Çalabilirim. Sizi şaşırtacak çok sayıda harika özelliklerim var!\n\n **Tıklayınız /Komutlar Daha Fazlası İçin [Mehmet Bey](https://t.me/EfsaneStar) 😎**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
             InlineKeyboardButton("➕ Grubunuza Ekle ➕", url="https://t.me/GroupMusicPlayBot?startgroup=true")
