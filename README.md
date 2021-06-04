@@ -1,11 +1,11 @@
-<h1 align="centre">🎶 Müzik Bot 🎶</h1>
+<h1 align="centre">🎶 RG Bot 🎶</h1>
 
 [![W2HMusic logo](https://i.ibb.co/549yrxQ/IMG-20210603-133248-749.jpg)](https://t.me/EfsaneStar)
 
 
 <h3 align="centre"> Heroku </h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmetbaba06/Voice_Music2021)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mehmet0643/rgmuzikk)
 
 STRING_NAME i buradan alın ;
 
@@ -38,8 +38,8 @@ STRING_NAME i buradan alın ;
 
 - Eski Vc müzik botunu diger Müzik botlarına bakarak düzenledim.
 - Daha iyisi için uğraşıyoruz.
-- Rg Mehmet Ve Ben EfsaneStar Adı ile Telegramda Rg sohbet için En iyisi için mücadele vereceğiz. 
+- EfsaneStar Ve Ben RG Mehmet Adı ile Telegramda Rg sohbet için En iyisi için mücadele vereceğiz. 
 
 ### Telegramda Böyle
-- Sahip 👨‍💻= [Mehmet Bey](https://t.me/EfsaneStar)
-- Yardımcı Kurucu 👨‍💻= [Rg Mehmet](https://t.me/mehmett_12)
+- Sahip 👨‍💻= [Mehmet Bey](https://t.me/Mehmett_12)
+- Yardımcı Kurucu 👨‍💻= [EfsaneStar](https://t.me/EfsaneStar)
