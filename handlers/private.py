@@ -59,7 +59,6 @@ __× Önce Beni Grubunuza Ekleyin..
 💠 `/jsbul` : __saavn üzerinden arama yapar bulur__
 💠 `/katil` : __Asistan Grup a Katılıyor__
 💠 `/ayril` : __Gruptan Asistan Ayrılıyor__
-💠 `/vindir` : __Çalan parçayı youtubeden vdeo olarak indirir____
 """,
         reply_markup=InlineKeyboardMarkup(
               [[
