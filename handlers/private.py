@@ -9,13 +9,13 @@ from config import BOT_NAME as bn
 @Client.on_message(filters.command(["start", "start@GroupMusicPlayBot"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        text="**Merhaba 👋🏻 {}!**\n\n **Telegram Gruplarının Sesli Sohbetlerinde Müzik Çalabilirim. Sizi şaşırtacak çok sayıda harika özelliklerim var! \n\n **Tıklayınız /Komutlar Daha Fazlası İçin @EfsaneStar Yardım için yanınızda ❤**".format(message.from_user.mention),
+        text="**Merhaba 👋🏻 {}!**\n\n**Telegram Gruplarının Sesli Sohbetlerinde Müzik Çalabilirim. Sizi şaşırtacak çok sayıda harika özelliklerim var!\n\n **Tıklayınız /Komutlar Daha Fazlası İçin [Mehmet Bey](https://t.me/EfsaneStar) ❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
             InlineKeyboardButton("➕ Grubunuza Ekle ➕", url="https://t.me/GroupMusicPlayBot?startgroup=true")
             ],[
-            InlineKeyboardButton("💬 Group", url="https://t.me/sohbetskyfall"),
-            InlineKeyboardButton("Channel 🔊", url="https://t.me/kanalEfsanestar")
+            InlineKeyboardButton(" Group 💬", url="https://t.me/sohbetskyfall"),
+            InlineKeyboardButton("Channel 📣", url="https://t.me/kanalEfsanestar")
             ],[
             InlineKeyboardButton("Tasarım 👨‍💻", url="https://t.me/Mehmett_12"),
             InlineKeyboardButton("Kurucu Sahip 👨‍💻", url="https://t.me/EfsaneStar")
@@ -30,7 +30,7 @@ async def gstart(_, message: Message):
           text="**Music Bot Is Online ✅**",
           reply_markup=InlineKeyboardMarkup(
               [[
-              InlineKeyboardButton(text="🎙️ Support Group 🎙️", url="https://t.me/sohbetskyfall")
+              InlineKeyboardButton(text="🎛️ Support Group 🎛️", url="https://t.me/sohbetskyfall")
               ]]
           )
       )
@@ -63,7 +63,7 @@ __× Önce Beni Grubunuza Ekleyin..
 """,
         reply_markup=InlineKeyboardMarkup(
               [[
-              InlineKeyboardButton(text="🎙️ Support Group 🎙️", url="https://t.me/sohbetlobisi")
+              InlineKeyboardButton(text="🎛️ Support Group 🎛️", url="https://t.me/sohbetlobisi")
               ]]
           )
       )
