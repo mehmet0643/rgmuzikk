@@ -17,8 +17,8 @@ async def start(_, message: Message):
             InlineKeyboardButton("💬 Group", url="https://t.me/sohbetskyfall"),
             InlineKeyboardButton("Channel 🔊", url="https://t.me/kanalEfsanestar")
             ],[
-            InlineKeyboardButton("Moderators 👨‍💻", url="https://t.me/CANTERMUX"),
-            InlineKeyboardButton("Türkish Dev 👨‍💻", url="https://t.me/EfsaneStar")
+            InlineKeyboardButton("Tasarım 👨‍💻", url="https://t.me/Mehmett_12"),
+            InlineKeyboardButton("Kurucu Sahip 👨‍💻", url="https://t.me/EfsaneStar")
             ]]
         ),
         disable_web_page_preview=True
@@ -56,10 +56,11 @@ __× Önce Beni Grubunuza Ekleyin..
 💠 `/durdur` : __Müzik Çalmayı Duraklat__
 💠 `/devam` : __Müzik çalmayı devam ettir__ 
 💠 `/bitir` : __Müzik çalmayı durdurur__
-💠 `/` : __Yönetici Listesini Yeniden Yükler__
+💠 `/jsbul` : __saavn üzerinden arama yapar bulur__
 💠 `/katil` : __Asistan Grup a Katılıyor__
-💠 `/admincache` : __Yönetici listesini yeniler__
-💠 `/ayril` : __Gruptan Asistan Ayrılıyor.__""",
+💠 `/ayril` : __Gruptan Asistan Ayrılıyor__
+💠 `/vindir` : __Çalan parçayı youtubeden vdeo olarak indirir____
+""",
         reply_markup=InlineKeyboardMarkup(
               [[
               InlineKeyboardButton(text="🎙️ Support Group 🎙️", url="https://t.me/sohbetlobisi")
