@@ -19,7 +19,8 @@ async def start(_, message: Message):
             ],[
             InlineKeyboardButton("Tasarım 👨‍💻", url="https://t.me/EfsaneStar"),
             InlineKeyboardButton("Kurucu Sahip 👨‍💻", url="https://t.me/Mehmett_12")
-            ]]
+            ],[
+            InlineKeyboardButton("Komutlar ▶️", url="https://telegra.ph/RG-KOMUT-06-04)
         ),
         disable_web_page_preview=True
     )
