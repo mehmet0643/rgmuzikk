@@ -33,7 +33,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎵 ** İşleme alıyorum lütfen beklryiniz. Efendim 🤗** ...")
+    await lel.edit("🎵 ** İşleme alıyorum lütfen bekleyiniz. Efendim 🤗** ...")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -101,7 +101,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=thumb_name,
         reply_markup=keyboard,
-        caption="▶️ **Oynatılıyor** {} Voice_Music2021 tarafından 💽 Başka bir arama yapmak için bul veya ytb yazınız. Efendim 🤗".format(
+        caption="▶️ **Oynatılıyor** {} RG Music tarafından 💽 Başka bir arama yapmak için bul veya ytb yazınız. Efendim 🤗".format(
         message.from_user.mention()
         ),
     )
