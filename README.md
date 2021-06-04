@@ -25,14 +25,14 @@ STRING_NAME i buradan alın ;
 - 💽 /ytp <youtuden direk müzik bulur ve oynatır. 
 - 🌍 /bul <song name> - istediğiniz şarkıları hızlı bir şekilde indirin
 - 📩 /arama <query> - youtube'da ayrıntıları içeren videoları arama
-- 🔂 /jsbul <saavn> - saavn üzenden parçayı bulur. 
-- 📩 /vindir Parçayı youtube üzerinden vdeo olarak indirir. 
 
 **Yalnızca yöneticiler**
 - ⏸️ /durdur - şarkı çalmayı duraklatma
 - ⏩ /devam - şarkı çalmaya devam et
 - ⏯️ /atla - sonraki şarkıyı çal
 - ❌ /bitir - müzik çalmayı durdurma
+- 👍 /katil - userbot gruba katılsın 
+- 👋 /ayril - userbot grubdan ayrılsın veda etsin
 
 ## Genel Yorum 👨‍💻
 
