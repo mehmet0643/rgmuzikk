@@ -56,7 +56,7 @@ async def a(client, message: Message):
         )
         print(str(e))
         return
-    await m.edit(f"**{Bn} :-** 📥 Indiriyor...\n**Query :-** {query}")
+    await m.edit(f"**{Bn} :-** 📥 Indiriyor...\n**sorgu:-** {query}")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -77,76 +77,3 @@ async def a(client, message: Message):
     except Exception as e:
         print(e)
 
-
-# YouTube çalan müziği vdeo olarak indirmek için.
- 
-@Client.on_message(filters.command(["vindir", "video"]))
-async def ytmusic(client,message: Message):
-    global is_downloading
-    if is_downloading:
-        await message.reply_text("Another download is in progress, try again after sometime.")
-        return
-
-    urlissed = get_text(message)
-
-    pablo =  await client.send_message(
-            message.chat.id,
-            f"`📩 Alıyorum {urlissed} Youtube Sunucularından. Lütfen bekleyin.`")
-    if not urlissed:
-        await pablo.edit("Geçersiz Komut Sözdizimi, Daha fazla şey öğrenmek için lütfen Yardım menüsünü kontrol edin!")
-        return
-    
-    search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
-    mi = search.result()
-    mio = mi["search_result"]
-    mo = mio[0]["link"]
-    thum = mio[0]["title"]
-    fridayz = mio[0]["id"]
-    thums = mio[0]["channel"]
-    kekme = f"https://img.youtube.com/vi/{fridayz}/hqdefault.jpg"
-    await asyncio.sleep(0.6)
-    url = mo
-    sedlyf = wget.download(kekme)
-    opts = {
-            "format": "best",
-            "addmetadata": True,
-            "key": "FFmpegMetadata",
-            "prefer_ffmpeg": True,
-            "geo_bypass": True,
-            "nocheckcertificate": True,
-            "postprocessors": [
-                {"key": "FFmpegVideoConvertor", "tercih edilen biçim": "mp4"}
-            ],
-            "outtmpl": "%(id)s.mp4",
-            "logtostderr": False,
-            "quiet": True,
-        }
-    try:
-        is_downloading = True
-        with youtube_dl.YoutubeDL(opts) as ytdl:
-            infoo = ytdl.extract_info(url, False)
-            duration = round(infoo["duration"] / 60)
-
-            if duration > 8:
-                await pablo.edit(
-                    f"❌ 8 dakikadan uzun videolar(s) izin verilmezse, sağlanan video{duration} dakika(s)"
-                )
-                is_downloading = False
-                return
-            ytdl_data = ytdl.extract_info(url, download=True)
-            
-    
-    except Exception as e:
-        #await pablo.edit(event, f"**Failed To Download** \n**Error :** `{str(e)}`")
-        is_downloading = False
-        return
-    
-    c_time = time.time()
-    file_stark = f"{ytdl_data['id']}.mp4"
-    capy = f"**Video Name ➠** `{thum}` \n**Requested For :** `{urlissed}` \n**Channel :** `{thums}` \n**Link :** `{mo}`"
-    await client.send_video(message.chat.id, video = open(file_stark, "rb"), duration = int(ytdl_data["duration"]), file_name = str(ytdl_data["title"]), thumb = sedlyf, caption = capy, supports_streaming = True , progress=progress, progress_args=(pablo, c_time, f'`Uploading {urlissed} Song From YouTube Music!`', file_stark))
-    await pablo.delete()
-    is_downloading = False
-    for files in (sedlyf, file_stark):
-        if files and os.path.exists(files):
-            os.remove(files)
